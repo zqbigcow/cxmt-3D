@@ -1,0 +1,299 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第2节：导出CAD异常处理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="操作规范.html" />
+    
+    
+    <link rel="prev" href="异常弹窗处理方法.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    3D软件常见问题问答
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html">
+            
+                    
+                    第1节：异常弹窗处理方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="导出CAD异常处理.html">
+            
+                <a href="导出CAD异常处理.html">
+            
+                    
+                    第2节：导出CAD异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="操作规范.html">
+            
+                <a href="操作规范.html">
+            
+                    
+                    第3节：操作规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第2节：导出CAD异常处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;2&#x8282;&#xFF1A;&#x5BFC;&#x51FA;cad&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x7B2C;2&#x8282;&#xFF1A;&#x5BFC;&#x51FA;CAD&#x5F02;&#x5E38;&#x5904;&#x7406;</h1>
+<h4 id="&#x4E8C;&#x3001;&#x5BFC;&#x51FA;cad&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x4E8C;&#x3001;&#x5BFC;&#x51FA;CAD&#x5F02;&#x5E38;&#x5904;&#x7406;</h4>
+<p><strong><font color="#008cff">&#x95EE;&#x9898;&#x4E00;&#xFF1A;CAD&#x5BFC;&#x51FA;&#x7A7A;&#x767D;&#x95EE;&#x9898;</font></strong><br><strong>&#x89E3;&#x7B54;&#xFF1A;&#x5BFC;&#x51FA;cad&#x67DC;&#x4F53;&#x56FE;&#x7EB8;&#x65F6;&#x9700;&#x8981;&#x7A0D;&#x7B49;&#x7247;&#x523B;&#x3002;&#x67DC;&#x5B50;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#x65F6;&#xFF0C;&#x66F4;&#x5E94;&#x8010;&#x5FC3;&#x7B49;&#x5F85;&#xFF0C;&#x8FC7;&#x65E9;&#x5E72;&#x6270;cad&#x4F1A;&#x5BFC;&#x81F4;&#x5BFC;&#x51FA;&#x5931;&#x8D25;&#x6216;&#x7F3A;&#x5C11;&#x677F;&#x4EF6;</strong><br>&#x9996;&#x5148;&#x68C0;&#x67E5;&#x8BBE;&#x7F6E;&#x65B9;&#x9762;<br>&#xFF08;1&#xFF09;&#x6253;&#x5F00;CAD&#xFF0C;&#x8F93;&#x5165;&#x5B57;&#x6BCD;op&#x540E;&#x56DE;&#x8F66;&#xFF0C;&#x6309;&#x7167;&#x4E0B;&#x56FE;&#x8BBE;&#x7F6E;&#x5373;&#x53EF;<br><img src="img/p30.png" alt="p30"><br>&#xFF08;2&#xFF09;&#x53F3;&#x51FB;&#x201C;&#x6211;&#x7684;&#x7535;&#x8111;&#x201D;&#xFF0C;&#x70B9;&#x51FB;&#x201C;&#x7BA1;&#x7406;&#x201D;&#xFF0C;&#x8FDB;&#x5165;&#x670D;&#x52A1;&#xFF0C;&#x786E;&#x4FDD;Distributed Transaction Coordinator&#x548C;Remote Procedure Call (RPC) &#x4EE5;&#x53CA;Security Accounts Manager&#x4E09;&#x4E2A;&#x670D;&#x52A1;&#x90FD;&#x662F;&#x5DF2;&#x542F;&#x52A8;&#x72B6;&#x6001;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x542F;&#x52A8;&#xFF0C;&#x9F20;&#x6807;&#x53F3;&#x952E;&#x542F;&#x52A8;&#x5B83;&#x3002;<br><img src="img/p31.png" alt="p31"><br><img src="img/p32.png" alt="p32"><br><img src="img/p33.png" alt="p33"><br><img src="img/p34.png" alt="p34">  </p>
+<p>&#xFF08;3&#xFF09;&#x6253;&#x5F00;&#x6CE8;&#x518C;&#x8868;&#xFF0C;&#x5B9A;&#x4F4D;&#x5230;HKey_Users&#x5C55;&#x5F00;&#xFF0C;&#x4E0B;&#x9762;&#x6709;&#x597D;&#x51E0;&#x4E2A;S-1-??????&#x7684;&#xFF0C;&#x627E;&#x5230;&#x81EA;&#x5DF1;&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x7B2C;&#x4E8C;&#x957F;&#x7684;&#x90A3;&#x4E2A;&#xFF08;&#x4E0D;&#x5E26;_Classes&#x540E;&#x7F00;&#x7684;&#xFF09;&#xFF0C;&#x5C55;&#x5F00;&#xFF0C;&#x5B9A;&#x4F4D;&#x5230;Software/Autodesk/AutoCAD/R18.0/ACAD-8001:804&#xFF08;&#x82F1;&#x6587;&#x7248;&#x7684;&#x5C31;&#x662F;409&#xFF09;&#xFF0C;&#x5B9A;&#x4F4D;&#x5230;InfoCenter&#xFF0C;&#x53F3;&#x8FB9;&#x7684;InfoCenterOn&#xFF0C;&#x53CC;&#x51FB;&#x7F16;&#x8F91;&#x503C;&#xFF0C;&#x6539;&#x4E3A;0&#x5C31;OK&#x4E86;&#x3002;<br><img src="img/p35.png" alt="p35"><br><img src="img/p36.png" alt="p36">  </p>
+<p><strong><font color="#008cff">&#x95EE;&#x9898;&#x4E8C;&#xFF1A;&#x51FA;&#x73B0;&#x4E0B;&#x5217;&#x5F02;&#x5E38;&#x5F39;&#x7A97;</font></strong><br><img src="img/p37.png" alt="p37"><br><strong> &#x89E3;&#x7B54;&#xFF1A;&#x91CD;&#x88C5;CAD&#xFF08;CAD&#x5FC5;&#x987B;&#x4E3A;2012&#x6216;2014&#x7248;&#xFF0C;&#x6CE8;&#x610F;&#xFF1A;&#x4E0D;&#x8981;&#x5378;&#x8F7D;&#x540E;&#x91CD;&#x88C5;&#xFF0C;&#x8981;&#x70B9;cad&#x5378;&#x8F7D;&#x4E4B;&#x65F6;&#x5F39;&#x51FA;&#x7684;&#x7A97;&#x53E3;&#x754C;&#x9762;&#x70B9;&#x91CD;&#x88C5;&#x5373;&#x53EF;&#xFF09;</strong><br><img src="img/p39.png" alt="p39">  </p>
+<p><strong> <font color="#008cff">&#x95EE;&#x9898;&#x4E09;&#xFF1A;&#x51FA;&#x73B0;&#x4E0B;&#x9762;&#x5F02;&#x5E38;&#x5F39;&#x7A97;</font></strong><br><img src="img/p40.png" alt="p40"><br><strong>&#x89E3;&#x7B54;&#xFF1A;&#x70B9;&#x51FB;&#x786E;&#x5B9A;&#x540E;&#x91CD;&#x65B0;&#x5BFC;&#x51FA;CAD&#x5373;&#x53EF;</strong>    </p>
+<p><strong><font color="#008cff">&#x95EE;&#x9898;&#x56DB;&#xFF1A;&#x51FA;&#x73B0;&#x4E0B;&#x9762;&#x5F02;&#x5E38;&#x5F39;&#x7A97;</font></strong><br><img src="img/p41.png" alt="p41"><br><strong>&#x89E3;&#x7B54;&#xFF1A;cad&#x4E2D;&#x6BD2;&#xFF0C;&#x4F7F;&#x7528;&#x6740;&#x6BD2;&#x8F6F;&#x4EF6;&#x6740;&#x6BD2;</strong>    </p>
+<p><strong><font color="#008cff">&#x95EE;&#x9898;&#x4E94;&#xFF1A;&#x65E0;&#x6CD5;&#x6253;&#x5370;&#x5168;&#x90E8;&#x6807;&#x6CE8;</font></strong><br><img src="img/p42.png" alt="p42"><br><strong>&#x89E3;&#x7B54;&#xFF1A;&#x5728;&#x6253;&#x4E0D;&#x51FA;&#x6807;&#x6CE8;&#x7684;&#x5E03;&#x5C40;&#x7A97;&#x53E3;&#x5185;&#xFF0C;&#x53F3;&#x952E;--&#x7740;&#x8272;&#x6253;&#x5370;--&#x7EBF;&#x6846;</strong>    </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="异常弹窗处理方法.html" class="navigation navigation-prev " aria-label="Previous page: 第1节：异常弹窗处理方法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="操作规范.html" class="navigation navigation-next " aria-label="Next page: 第3节：操作规范">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第2节：导出CAD异常处理","level":"1.2.2","depth":2,"next":{"title":"第3节：操作规范","level":"1.2.3","depth":2,"path":"Chapter1/操作规范.md","ref":"Chapter1/操作规范.md","articles":[]},"previous":{"title":"第1节：异常弹窗处理方法","level":"1.2.1","depth":2,"path":"Chapter1/异常弹窗处理方法.md","ref":"Chapter1/异常弹窗处理方法.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/导出CAD异常处理.md","mtime":"2019-04-28T06:55:26.628Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-28T04:49:23.636Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
